@@ -1,0 +1,15 @@
+.container{
+    width: 100vw;
+    background-color: #6C91C2;
+}
+
+.title{
+    margin: 30px 0 30px 10px;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+}
+
+.icon{
+    font-size: 40px;
+}
