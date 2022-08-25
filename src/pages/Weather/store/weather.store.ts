@@ -25,9 +25,9 @@ export const weatherSlice = createSlice({
     initialState,
     reducers: {
         deleteCity: (state, action: PayloadAction<string>) => {
-            return {
-                ...state,
-                selectedCities: state.selectedCities.filter(city => city.name !== action.payload)
+            const itemToRemove = state.selectedCities.findIndex(c => c.name === action.payload);
+            if (itemToRemove !== -1) {
+                state.selectedCities.splice(itemToRemove, 1)
             }
         },
     },
